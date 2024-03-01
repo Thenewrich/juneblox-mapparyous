@@ -1,0 +1,999 @@
+.header {
+  background-image: url('../boatbanner.png');
+  margin: auto;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-width: 1px;
+  height: 125px;
+  width: 800px;
+  background-color: rgb(255,255,255);
+}
+
+.orange_alert {
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-width: 1px;
+  height: 32px;
+  width: 800px;
+  background-color: orange;
+  color: white;
+  text-align: center;
+  margin-top: -50px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+}
+
+.bt_popup {
+  z-index: 100;
+  width: 450px;
+  top:15%;
+  height: 150px;
+  border: solid 1px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  margin-top: 10%;
+  background-color: white;
+}
+
+.bt_popup_closed {
+  visibility: hidden;
+}
+
+.bt_popup .topbar {
+  border-bottom: solid 1px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  background-color: #3e79ff;
+}
+
+.bt_popup .topbar .title {
+  height: 32px;
+  text-decoration: none;
+  font: normal 16px/normal "Trebuchet MS",sans-serif;
+  font-weight: bold;
+}
+
+.bt_popup .content {
+  background-color: #ececec;
+  padding: 5px;
+  height: 107px;
+  text-align: center;
+  font: normal 16px/normal "Trebuchet MS",sans-serif;
+}
+
+.bt_popup .content .message {
+  max-height: 10px;
+}
+
+.bt_popup .content .button {
+  margin-top: 30px;
+}
+
+.header a {
+  color: White;
+  text-decoration: none;
+  font: normal 12px/normal "Trebuchet MS",sans-serif;
+  font-weight: bold;
+}
+
+.header #authtext {
+  color: White;
+  text-decoration: none;
+  font: normal 12px/normal "Trebuchet MS",sans-serif;
+  font-weight: bold;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+.header .auth {
+  top: 0;
+  left: 0;
+  padding: 4px;
+}
+
+.headernav {
+  margin: auto;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-width: 1px;
+  height: 30px;
+  width: 800px;
+  background-color: #6E99C9;
+  font-family: "Trebuchet MS", sans-serif;
+  color: white;
+  text-align: center;
+}
+.headernav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.headernav a:hover {
+  text-decoration: underline;
+}
+
+.headerlogo {
+    display: block;
+    width: 125px;
+    height: 125px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    margin-bottom: auto;
+}
+
+.container {
+  width: 800px;
+  height: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -30px;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+#Body {
+  width: 800px;
+  display: block;
+  height: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -30px;
+  font-family: "Trebuchet MS", sans-serif;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000;
+  padding: 5px;
+  position: relative;
+}
+
+#CustomizeCharacterContainer{
+    margin:0;
+}
+#CustomizeCharacterContainer h4{
+  background-color: grey;
+    border-bottom-style: solid;
+    border-width: 1px;
+    margin:0;
+    text-align:center;
+}
+#CustomizeCharacterContainer .NoResults{
+    padding:15px;
+    text-align:center;
+}
+#CustomizeCharacterContainer .TileGroup{
+    clear:left;
+    text-align:center;
+}
+#CustomizeCharacterContainer .Asset{
+    float:left;
+    margin:5px 8px;
+    text-align:left;
+    vertical-align:top;
+    width:112px;
+}
+#CustomizeCharacterContainer .Asset .AssetThumbnail{
+    border:solid 1px #000;
+    height:110px;
+    position:relative;
+    text-align:center;
+    width:110px;
+}
+#CustomizeCharacterContainer .Asset .AssetDetails{
+    overflow:hidden;
+    padding:2px 0 6px 0;
+    text-align:left;
+    width:110px;
+}
+#CustomizeCharacterContainer .AssetName a{
+    font-size:.9em;
+    font-weight:bold;
+    line-height:1.5em;
+    vertical-align:top;
+}
+#CustomizeCharacterContainer .Label,#CustomizeCharacterContainer .Detail,#CustomizeCharacterContainer .DetailHighlighted{
+    font-size:.8em;
+}
+#CustomizeCharacterContainer .FooterPager{
+    border-top:solid 1px #000;
+    clear:left;
+    margin:10px 0 0 0;
+    padding:3px 0;
+    text-align:center;
+}
+.AttireChooser{
+    border:solid 1px #000;
+    float:left;
+    margin:0;
+    min-width:0;
+    padding:0;
+    position:relative;
+    text-align:left;
+    width:430px;
+}
+.Accoutrements{
+    border:solid 1px #000;
+    clear:left;
+    margin-top:10px;
+    min-width:0;
+    padding:0;
+    position:relative;
+    text-align:left;
+    width:530px;
+}
+.AttireChooser .AttireCategory{
+    border-bottom:solid 1px #000;
+    margin:0 0 10px 0;
+    padding:3px 0;
+    text-align:center;
+}
+
+.item_container .item_thumbnail {
+  width: 250px;
+  height: 250px;
+  border: solid 1px;
+  float: left;
+  margin-right: 30px;
+}
+
+.item_container .item_details {
+  border: dashed 1px;
+  width: 300px;
+  float: right;
+  padding: 10px;
+}
+
+.item_container .item_details .item_name {
+  font-size: 18px;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+.item_container .item_details .item_price {
+  font-size: 13px;
+  color: #e74940;
+}
+
+.PriceInStuds {
+  color: #e74940;
+}
+
+.item_container .item_details .item_text {
+  font-size: 13px;
+}
+
+.item_container .item_details .item_description {
+  width: 100%;
+  border: solid 1px;
+  font-size: 12px;
+  padding: 0px;
+  margin-top: 10px;
+}
+
+
+.item_container .item_details .item_description p {
+  padding: 5px;
+}
+
+.AttireChooser .AttireOptions{
+    margin:5px;
+}
+.AttireCategory .AttireCategorySelector_Selected{
+    font-weight:bold;
+}
+.AttireChooser .HeaderPager,.AttireChooser .HeaderPager{
+    margin-bottom:10px;
+}
+.AttireChooser .HeaderPager .Label,.AttireChooser .FooterPager .Label{
+    font-size:1em;
+    vertical-align:middle;
+}
+.CharacterViewer{
+    border:solid 1px #000;
+    float:right;
+    width:354px;
+}
+.Mannequin{
+    border:solid 1px #000;
+    clear:right;
+    float:right;
+    margin-top:10px;
+    text-align:center;
+    width:354px;
+}
+.Mannequin .ColorChooserFrame{
+    margin:0 auto;
+}
+
+.limited_tag {
+  z-index: 4;
+  position: absolute;
+  right: 0;
+  border-left: solid 1px;
+  border-bottom: solid 1px;
+  background-color: #f7ff5b;
+  font-weight: bolder;
+}
+
+.loginform {
+  width: 150px;
+      float: left;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-width: 1px;
+  background-color: rgb(248, 248, 248);
+}
+
+.loginform .loginheader{
+  background-color: rgb(175, 175, 175);
+  width: 150px;
+  border-bottom-style: solid;
+  border-width: 1px;
+}
+
+.loginform #errormessage {
+  font-size: 11px;
+  color: red;
+}
+
+.LoginPageContainer {
+  width: 500px;
+  background-color: #FFFFFF;
+  height: 200px;
+  border: solid 1px;
+  margin: auto;
+  font-family: "Trebuchet MS",sans-serif;
+}
+
+.LoginPageContainer .NoLoginText {
+  font-size: 11px;
+}
+
+.LoginPageContainer .LoginTitle {
+  margin-left: 20px;
+}
+
+.LoginPageContainer .LoginForm {
+  margin-left: 20px;
+}
+
+.LoginPageContainer .LoginForm label {
+  display: inline-block;
+  width: 80px;
+  text-align: left;
+}
+
+.SignUpPageContainer {
+  width: 620px;
+  background-color: #FFFFFF;
+  border: solid 1px;
+  margin: auto;
+  font-family: "Trebuchet MS",sans-serif;
+}
+
+.SignUpPageContainer .NoSignUpText {
+  font-size: 11px;
+}
+
+.SignUpPageContainer .SignUpTitle {
+}
+
+.SignUpPageContainer .SignUpForm {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.SignUpPageContainer .SignUpForm label {
+  display: inline-block;
+  width: 150px;
+  text-align: left;
+}
+
+.SignUpPageContainer .SignUpForm .InputBox {
+
+}
+
+.SignUpPageContainer .SignUpForm .InputBox .Suggestion {
+  font-size: 12px;
+}
+
+.SignUpPageContainer .SignUpForm input[type=submit] {
+  background-color: #ffe647;
+  color: #000;
+  height: 2.5em;
+  font-family: "Trebuchet MS";
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.BigButton {
+  background-color: #ffe647;
+  color: #000;
+  height: 2.5em;
+  font-family: "Trebuchet MS";
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.creategame input[type=submit] {
+    border-color: rgb(130, 130, 130);
+    border-style: solid;
+    background-color: #FFFFFF;
+    font-size: 16px;
+    font-family: "Trebuchet MS";
+}
+
+.loginform input[type=text], .registerform input[type=text] {
+    border-color: rgb(130, 130, 130);
+    border-width: 3px;
+    border-style: dashed;
+    height: 25px;
+    font-size: 16px;
+    font-family: "Trebuchet MS";
+}
+.loginform input[type=password], .registerform input[type=password] {
+    border-color: rgb(130, 130, 130);
+    border-width: 3px;
+    border-style: dashed;
+    height: 25px;
+    font-size: 16px;
+    font-family: "Trebuchet MS";
+}
+
+.loginform input[type=submit], .registerform input[type=submit] {
+    border-color: rgb(130, 130, 130);
+    border-style: solid;
+    background-color: #FFFFFF;
+    font-size: 16px;
+    font-family: "Trebuchet MS";
+}
+
+.loginform input[type=submit]:hover {
+  background-color: #6e99c9;
+  border-color: #000;
+  color: #fff;
+}
+
+.gamecontainer {
+  width: 150px;
+      float: left;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-width: 1px;
+  background-color: rgb(248, 248, 248);
+}
+
+.gamecontainer .gameheader{
+  background-color: rgb(175, 175, 175);
+  width: 150px;
+  border-bottom-style: solid;
+  border-width: 1px;
+}
+
+.catalogleft {
+  width: 150px;
+      float: left;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-width: 1px;
+  background-color: rgb(248, 248, 248)
+}
+
+
+
+.catalogleft a:active {
+  font-weight: bold;
+}
+
+.catalogleft a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+.catalogleft a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+.catalogleft a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.catalogleft .current {
+    font-weight: bold;
+}
+
+.rightcontainer {
+  width: 620px;
+  background-color: #eee;
+  border: solid 1px #000;
+  float: right;
+  margin: 0 0 10px 0;
+  position: relative;
+  text-align: left;
+  padding: 10px;
+}
+.rightcontainer h1 {
+  margin-left: 10px;
+}
+.rightcontainer h4 {
+  margin-left: 10px;
+}
+
+.rightcontainer h3 {
+    line-height: 1em;
+    margin: 0 0 5px 0;
+    padding: 0;
+}
+.rightcontainer h2
+{
+  color: #333;
+  font-size: x-large;
+  margin: 0px 0 5px 0;
+}
+
+.rightcontainer #Bullets
+{
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 292px;
+}
+
+.rightcontainer #Bullets li
+{
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  margin: 0 0 25px 0;
+  padding: 0 0 0 56px;
+}
+
+.rightcontainer #Bullets h3
+{
+  line-height: 1em;
+  margin: 0 0 5px 0;
+  padding: 0;
+}
+
+.rightcontainer #Bullets #Bullet1
+{
+  background-image: url(Bullet_1.png);
+  font-size: 12px;
+}
+
+.rightcontainer #Bullets #Bullet2
+{
+  background-image: url(Bullet_2.png);
+  font-size: 12px;
+}
+
+.rightcontainer #Bullets #Bullet3
+{
+  background-image: url(Bullet_3.png);
+  font-size: 12px;
+}
+
+.rightcontainer #Trailer {
+    float: right;
+    margin: 0;
+    width: 133px;
+}
+
+.containergrey {
+  width: 788px;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -30px;
+  font-family: "Trebuchet MS", sans-serif;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000;
+  background-color: rgb(248, 248, 248);
+  padding: 5px;
+  position: relative;
+}
+
+.containergrey_nopadding {
+  width: 800px;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -30px;
+  font-family: "Trebuchet MS", sans-serif;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000;
+  background-color: rgb(248, 248, 248);
+  position: relative;
+}
+
+.catalogcontainer {
+  width: 800px;
+  height: 541px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -30px;
+  font-family: "Trebuchet MS", sans-serif;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000;
+  background-color: rgb(248, 248, 248);
+  position: relative;
+overflow: auto;
+}
+
+.catalogcontainer h2 {
+  background-color: grey;
+    border-bottom-style: solid;
+    border-width: 1px;
+    margin:0;
+    text-align:center;
+}
+
+.catalogcontainer .leftside {
+  width: 149px;
+  height: 512px;
+  float: left;
+  border-right-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-width: 1px;
+  background-color: rgb(248, 248, 248)
+}
+
+.catalogcontainer .leftside .nav a {
+  color: blue;
+  text-decoration: none;
+}
+
+.banner_title {
+  background-color: grey;
+    border-bottom-style: solid;
+    border-width: 1px;
+    margin:0;
+    text-align:center;
+}
+
+.catalogcontainer .leftside h4 {
+    border-bottom-style: solid;
+    border-width: 1px;
+    margin:0;
+    text-align:center;
+}
+
+.catalogcontainer .rightside h4 {
+    border-bottom-style: solid;
+    border-width: 1px;
+    margin:0;
+    text-align:center;
+}
+.catalogcontainer .rightside {
+  height: 350px;
+  width: 650px;
+  float: right;
+}
+
+.catalogcontainer .Asset{
+    margin: 5px;
+    vertical-align:top;
+    width:122px;
+    font-size: 12px;
+}
+.catalogcontainer .Asset .AssetThumbnail{
+    border:solid 1px #000;
+    height:120px;
+    text-align:center;
+    width:120px;
+    position: relative;
+}
+.catalogcontainer .Asset .AssetDetails{
+    font-family:Verdana,Sans-Serif;
+    overflow:hidden;
+    padding:2px 0 6px 0;
+    width:120px;
+}
+.catalogcontainer .AssetDetails a {
+  text-decoration: none;
+  color: blue;
+}
+
+.catalogcontainer .AssetName a{
+    font-size:.9em;
+    font-weight:bold;
+    line-height:1.5em;
+    vertical-align:top;
+}
+
+.catalogitems {
+  margin-top: 10px;
+  width: 540px;
+  margin-left: 100px;
+}
+
+.item {
+    margin: -1px 0 15px 10px;
+    vertical-align: top;
+    width: 122px;
+}
+
+.item .details {
+    font-family: "Trebuchet MS",Sans-Serif;
+    overflow: hidden;
+    padding: 2px 0 6px 0;
+    width: 120px;
+}
+
+.item .itemimage {
+    border: solid 1px #000;
+    height: 120px;
+    text-align: center;
+    width: 120px;
+    background-color: #fff;
+}
+.item #itemname {
+  width: 100px;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.header #Alerts
+{
+
+  float: right;
+  height: 80%;
+  position: relative;
+  width: 288px;
+}
+
+.header .SignUpAndPlay
+{
+}
+
+.header #Alerts #AlertSpace
+{
+  position: absolute;
+  background-color: #fff;
+  border: solid 1px #000;
+  color: #6e99c9;
+  margin-left: 150px;
+  bottom: 3px;
+  padding: 5px 0px;
+  text-align: center;
+  width: 135px;
+}
+
+.header #Alerts #MessageAlert a
+{
+  color: #6e99c9;
+}
+
+.header #Alerts #MessageAlert a:hover
+{
+  color: #1874CD;
+}
+
+.header #Alerts #RobuxAlert a
+{
+  color: #72bf00;
+}
+
+.header #Alerts #RobuxAlert a:hover
+{
+  color: #49b745;
+}
+
+.header #Alerts #TicketsAlert a
+{
+  color: #e74940;
+}
+
+.header #Alerts #TicketsAlert a:hover
+{
+  color: #903732;
+}
+.userprofile {
+  padding: 10px;
+}
+.userprofile .usernamebanner {
+  background-color: rgb(150,150,150);
+  border-style: solid;
+  border-width: 1px;
+  width: 250px;
+}
+
+.userprofile .thumbnail {
+  border-width: 1px;
+  border-style: solid;
+}
+
+.userprofile .usertitle {
+  float: right;
+  margin-top: -30px;
+}
+.userprofile .description {
+  float: right;
+  margin-top: -250px;
+  width: 400px;
+  max-height: 100px;
+  text-align: right;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  font-size: 14px;
+}
+
+.modalBackground{
+    background-color:Gray;
+    filter:alpha(opacity=30);
+    opacity:.3;
+}
+
+.modalBackgroundClosed{
+    background-color:Gray;
+    filter:alpha(opacity=30);
+    opacity:.3;
+    visibility: hidden;
+}
+
+.modalPopup{
+    background-color:#ffd;
+    border-width:3px;
+    border-style:solid;
+    border-color:Gray;
+    padding:3px;
+}
+
+.popupControl{
+    background-color:#fff;
+    border:1px outset #fff;
+    position:absolute;
+    visibility:hidden;
+}
+
+.popupControlShown{
+    background-color:#fff;
+    border:1px outset #fff;
+    position:absolute;
+}
+.modalBackground {
+
+}
+
+.SpinnerHidden {
+  visibility: hidden;
+}
+.ColorPickerItem{
+    border-color:#fff;
+    border-style:solid;
+    border-width:2px;
+}
+.ColorPickerItem:hover{
+    border-color:Blue;
+    border-style:solid;
+    border-width:2px;
+}
+
+.profile_left {
+  float: left;
+  width: 49%;
+}
+
+.profile_right {
+  float: right;
+  width: 49%;
+}
+
+.profile_left .user_pane {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  border: solid 1px;
+  padding: 10px;
+  background-color: #6E99C9;
+  text-align: center;
+  overflow: hidden;
+}
+.profile_left .user_pane .username {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.profile_left .user_pane .onlinestatus {
+  font-weight: lighter;
+  font-size: 11px;
+  color: red;
+}
+
+.profile_left .user_pane .offlinestatus {
+  font-weight: lighter;
+  font-size: 11px;
+  color: #616161;
+}
+
+.profile_left .user_pane .thumbnail {
+  width: 200px;
+  height: 200px;
+}
+
+.profile_left .user_pane .description {
+  font-size: 13px;
+}
+
+.profile_left .user_pane .userpane_left {
+  float: left;
+  width: 49%;
+}
+.profile_left .user_pane .userpane_right {
+  float: right;
+  width: 49%;
+}
+
+.profile_left .badges_pane {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 15px;
+  box-sizing: border-box;
+  border: solid 1px;
+  background-color: #ECECEC;
+  text-align: center;
+  overflow: hidden;
+}
+
+.profile_left .badges_pane .content {
+  padding: 10px;
+}
+
+.profile_left .badges_pane h4 {
+    border-bottom-style: solid;
+    border-width: 1px;
+    margin:0;
+    text-align:center;
+    background-color: #888888;
+}
+
+.profile_right .friends_pane {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  border: solid 1px;
+  background-color: #ECECEC;
+  text-align: center;
+  overflow: hidden;
+}
+
+.profile_right .friends_pane .content {
+  padding: 10px;
+}
+
+.profile_right .friends_pane h4 {
+    border-bottom-style: solid;
+    border-width: 1px;
+    margin:0;
+    text-align:center;
+    background-color: #888888;
+}
+
+.browse_users {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

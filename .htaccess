@@ -1,0 +1,47 @@
+AddType application/x-httpd-php73 .php
+
+RewriteEngine on
+
+#RewriteRule user/(.*)/ user.php?id=$1
+#RewriteRule forum/thread/(.*) /forum/thread.php?id=$1
+#RewriteRule user/(.*)/ user.php?id=$1
+RewriteRule ^forum/board/([^/]+)/?$ /forum/board.php?id=$1 [L,QSA,NC]
+RewriteRule ^report/([^/]+)/?$ report.php?type=$1 [L,QSA,NC]
+RewriteRule ^forum/thread/([^/]+)/?$ /forum/thread.php?id=$1 [L,QSA,NC]
+RewriteRule ^user/([^/]+)/?$ user.php?id=$1 [L,QSA,NC]
+RewriteRule ^shop/item/([^/]+)/?$ /shop/item.php?id=$1 [L,QSA,NC]
+RewriteRule ^shop/edit/([^/]+)/?$ /shop/edit.php?id=$1 [L,QSA,NC]
+RewriteRule ^clan/([^/]+)/?$ clan.php?id=$1 [L,QSA,NC]
+RewriteRule ^clans/edit/([^/]+)/?$ /clans/edit.php?id=$1 [L,QSA,NC]
+RewriteRule ^clans/edit2/([^/]+)/?$ /clans/edit2.php?id=$1 [L,QSA,NC]
+RewriteRule ^forum/topic/([^/]+)/?$ forum/topic.php?id=$1 [L,QSA,NC]
+RewriteRule ^forum/reply/([^/]+)/?$ forum/reply.php?id=$1 [L,QSA,NC]
+RewriteRule ^play/set/([^/]+)/?$ play/set.php?id=$1 [L,QSA,NC]
+RewriteRule ^messages/message/([^/]+)/?$ messages/message.php?id=$1 [L,QSA,NC]
+RewriteRule ^user/(.*)/friends/([^/]+)/?$ /friends/all.php?id=$1 [L,QSA,NC]
+
+
+
+# Hide .php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+?)/?$ $1.php [NC,L]
+RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.php[? ].*$"
+
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* /404.php [L]
+
+
+
+# RewriteBase /
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_URI} \.(gif|jpg|jpeg|png)$
+# RewriteRule (.*) /assets/bh.png [L]
+ 
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* /404.php [L]
